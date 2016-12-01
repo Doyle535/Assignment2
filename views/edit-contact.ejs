@@ -1,0 +1,32 @@
+<% include partials/header.ejs %>
+<h1>Contact Details</h1>
+
+<form method="post">
+  <div class="form-group">
+    <label for="firstName" class="col-sm-2 control-label">First Name:</label>
+    <input name="firstName" id="firstName" required />
+  </div>
+  <div class="form-group">
+    <label for="lastName" class="col-sm-2 control-label">Last Name:</label>
+    <input name="lastName" id="lastName" required />
+  </div>
+  <div class="form-group">
+    <label for="birthday" class="col-sm-2 control-label">Birthday:</label>
+    <input type="date" name="birthday" id="birthday" required />
+  </div>
+  <div class="form-group">
+    <label for="phoneNumber" class="col-sm-2 control-label">Phone Number:</label>
+    <input type="tel" name="phoneNumber" id="phoneNumber" required />
+  </div>
+  <div class="form-group">
+    <label for="address" class="col-sm-2 control-label">Address:</label>
+    <input name="address" id="address" required />
+  </div>
+  <div class="form-group">
+    <label for="email" class="col-sm-2 control-label">Email:</label>
+    <input type="email" name="email" id="email" required />
+  </div>
+  <button class="btn btn-success col-sm-offset-2">Save</button>
+</form>
+
+<% include partials/footer.ejs %>

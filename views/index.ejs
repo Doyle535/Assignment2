@@ -1,0 +1,12 @@
+<% include partials/header.ejs %>
+    <h1>Online Address Book</h1>
+    <h2>Store personal contacts online!</h2>
+    <p>
+       <% if (!user){ %>
+          To start making your address book, login in <a href="/login">HERE</a> or register <a href="/register">HERE</a>.
+       <% } else { %>
+         Welcome <%= user.username %>! <br />
+         You have <%= user.contacts.length %> contacts saved!
+      <% } %>
+    </p>
+<% include partials/footer.ejs %>
